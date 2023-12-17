@@ -28,6 +28,18 @@ function clearTable() {
 const clrButton = document.querySelector('.clear');
 clrButton.addEventListener('click', clearTable);
 
+function eraser() {
+    const boxElements = document.querySelectorAll('.boxClass');
+    const color = 'rgb(255, 255, 188)';
+
+    boxElements.forEach((box) => {
+        box.addEventListener('mouseover', () => {
+            box.style.background = color;
+        });
+    });
+}
+const eraseButton = document.querySelector('.erase');
+eraseButton.addEventListener('click', eraser);
 
 
 
