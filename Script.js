@@ -41,5 +41,16 @@ function eraser() {
 const eraseButton = document.querySelector('.erase');
 eraseButton.addEventListener('click', eraser);
 
+function Drawer() {
+    const boxElements = document.querySelectorAll('.boxClass');
+    boxElements.forEach((box) => {
+        box.addEventListener('mouseover', () => {
+            box.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        });
+    });
+}
+const drawButton = document.querySelector('.draw');
+drawButton.addEventListener('click', Drawer);
+
 
 
