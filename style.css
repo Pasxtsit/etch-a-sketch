@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.drawTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(172, 31, 214);
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.menuButtons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
