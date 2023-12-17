@@ -17,3 +17,17 @@ function createDrawTable(y, x) {
     }
 };
 createDrawTable(80, 80);
+
+function clearTable() {
+    const boxElements = document.querySelectorAll('.boxClass');
+    const color = 'rgb(255, 255, 188)';
+    boxElements.forEach((box) => {
+        box.style.background = color;
+    });
+}
+const clrButton = document.querySelector('.clear');
+clrButton.addEventListener('click', clearTable);
+
+
+
+
